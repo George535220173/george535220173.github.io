@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>George Weilis Portofolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Section for Profile -->
+  <header class="profile-section">
+    <div class="social-icons">
+      <a href="https://www.instagram.com/georgeweilis" target="_blank">
+        <img src="Icons/ig.png" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/george-weilis-a864521a0/" target="_blank">
+        <img src="Icons/linkedin.png" alt="WhatsApp">
+      </a>
+      <a href="https://github.com/George535220173" target="_blank">
+        <img src="Icons/github.png" alt="GitHub">
+      </a>
+    </div>
+
+    
+    <a href="docs/CV-George.pdf" class="download-button" download>Download CV</a>
+    
+    <div class="profile-container">
+      <img src="Image/George-Red.png" alt="Profile Picture" class="profile-picture">
+      <h1 class="animated-title">
+        <span>G</span><span>e</span><span>o</span><span>r</span><span>g</span><span>e</span> 
+        <span>W</span><span>e</span><span>i</span><span>l</span><span>i</span><span>s</span> 
+        <span>J</span><span>u</span><span>n</span><span>i</span><span>o</span><span>r</span>
+      </h1>
+    </div>
+    <h2 class="tagline"><span id="dynamic-text"></span></h2>
+    <p class="profile-bio">I am a passionate programmer and a self-taught developer as a 
+      undergraduate student at Tarumanagara University. 
+      I enjoy working on projects that challenge me to grow as a developer and willing to learn new things
+      in order to become a better programmer. I also have knowledge of creative design and able to 
+      control Photoshop, Blender, Premier Pro, and Illustrator.</p>
+
+      <div class="skills-icons">
+        <img src="Icons/HTML5_logo_and_wordmark.svg.png" alt="HTML5">
+        <img src="Icons/CSS3_logo_and_wordmark.svg.png" alt="CSS3">
+        <img src="Icons/java.png" alt="JavaScript">
+        <img src="Icons/php.png" alt="PHP">
+        <img src="Icons/cshart.png" alt="C#">
+        <img src="Icons/python.png" alt="Python">
+      </div>
+      <p class="more-text">and many more...</p>
+      
+      
+  </header>
+
+  <div class="animated-line"></div>
+
+  <!-- Portofolio Section -->
+  <section class="portfolio-section">
+      <!-- Floating Icons -->
+    <div class="floating-icon"><img src="Icons/HTML5_logo_and_wordmark.svg.png" alt="HTML Icon"></div>
+    <div class="floating-icon"><img src="Icons/CSS3_logo_and_wordmark.svg.png" alt="CSS Icon"></div>
+    <div class="floating-icon"><img src="Icons/cshart.png" alt="c# Icon"></div>
+
+    <h2>My Projects</h2>
+
+    <div class="portfolio-grid">
+
+      <div class="project-card fade-in" 
+        data-name="NEXT!!!" 
+        data-github="https://github.com/George535220173" 
+        data-description="Second Place Project on Game Development using Unity and Free Assets.
+        ,This competition was held in University of Technology Bandung between July and August 2023.
+        ,This project took almost 3 weeks to make with a team of 3 members including myself."
+        data-images="Image/CORISINDO.png, Image/CORISINDO2.png, Image/CORISINDO3.png">
+      <img src="Image/CORISINDO.png" alt="Project 1">
+      <h3>NEXT!!!</h3>
+      <p>Second Place on Game Development "NEXT!!!" CORISINDO 2024</p>
+      </div>
+      
+      <div class="project-card fade-in"
+          data-name="Worldle" 
+          data-github="https://github.com/wennnn12/worldle_UAS_softdev" 
+          data-description="This is a popular game made using Flutter with the reference to Wordle.
+          ,This project took months with the use of Jira as schedule - Figma for the design -
+          and Firebase as the database.
+          ,With a team of 3 members including myself - we are able to finish this project in time with all functionalities implemented."
+          data-images="Image/Wordle.png, Image/Wordle2.png, Image/Wordle3.png">
+        <img src="Image/Wordle.png" alt="Project 2">
+        <h3>Worldle</h3>
+        <p>One of the game made using Flutter based on Wordle</p>
+      </div>
+      <div class="project-card fade-in"
+          data-name="Wizdrawal" 
+          data-github="https://github.com/George535220173/UAS_E-MONEY" 
+          data-description="This is a team-code E-Money application using Flutter.
+          ,This project was made mainly using flutter and firebase.
+          ,With a team of 5 members including myself - we are able to work together perfectly with all roles implemented."
+          data-images="Image/Wizdrawal.jpg, Image/Wizdrawal2.jpg, Image/Wizdrawal3.jpg">
+        <img src="Image/Wizdrawal.jpg" alt="Project 2">
+        <h3>Wizdrawal</h3>
+        <p>A self-code E-Money application using Flutter</p>
+      </div>
+      <div class="project-card fade-in"
+          data-name="Retro Hardware Store" 
+          data-github="https://github.com/George535220173/BackEnd-TugasFrontEnd" 
+          data-description="This is a website made using EJS - CSS - JavaScript - and MongoDB.
+          ,This project was made with lots of functionalities such as CRUD.
+          ,The project is about a marketplace for a retro hardware device that able to buy and sell like Tokopedia."
+          data-images="Image/Retro.png, Image/Retro2.png, Image/Retro3.png, Image/Retro4.png">
+        <img src="Image/Retro.png" alt="Project 2">
+        <h3>Retro Hardware Store</h3>
+        <p>Project for a website using HTML, CSS, and JavaScript alongside Firebase as the database</p>
+      </div>
+    </div>
+
+    <!-- Project Detail Modal -->
+<div class="project-detail-modal" id="projectDetailModal">
+  <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <div class="slideshow-container">
+          <!-- Add more images as needed -->
+      </div>
+
+      <h2 id="projectName">Project Name</h2>
+
+      <div class="description-slideshow">
+
+        <!-- Will be added by JavaScript -->
+
+        <!-- Navigation Dots -->
+        <div class="dots">
+          <!-- Will be added by JavaScript -->
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="nav-arrow left-arrow" onclick="changeDescriptionSlide(-1)">&#10094;</div>
+        <div class="nav-arrow right-arrow" onclick="changeDescriptionSlide(1)">&#10095;</div>
+      </div>
+      
+      <a href="https://github.com/George535220173" target="_blank" class="github-link">
+          <img src="Icons/github.png" alt="GitHub Logo">
+      </a>
+  </div>
+</div>
+
+  </section>
+
+  <div class="animated-line"></div>
+
+  <!-- Contact Section -->
+<section class="contact-section">
+  <h2>Contact Me</h2>
+  <p>If you'd like to get in touch, feel free to reach out through any of the social links below. I’d love to connect!</p>
+
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/george-weilis-a864521a0/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/George535220173" target="_blank">GitHub</a>
+    <a href="https://wa.me/6285179756235" target="_blank">WhatsApp</a>
+    <a href="mailto:george.535220173@stu.untar.ac.id">Email</a>
+    <a href="tel:085179756235">Phone</a>
+  </div>
+  
+</section>
+
+
+  <script src="scripts.js"></script>
+</body>
+</html>
